@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Portfolio Website" />
+        <meta name="description" content="Welcome to Arbaz Khan's portfolio – a curated showcase of top-tier software development projects, 
+        spanning various platforms and technologies. With a passion for coding and a knack for problem-solving, Arbaz has delivered solutions 
+        that are both functional and aesthetic. Dive in to discover a blend of technical expertise, innovative thinking, and a commitment to excellence." />
+        <title>Arbaz Khan | Dev</title>
+        <link
+            rel="stylesheet"
+            href="resources/swiper js/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="resources/css/loader.css" />
+        <link rel="stylesheet" href="resources/css/hamburger.css" />
+        <link rel="stylesheet" href="resources/css/home.css" />
+        <link rel="stylesheet" href="resources/css/about.css" />
+        <link rel="stylesheet" href="resources/css/services.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css" />
+        <link rel="stylesheet" href="resources/css/blog.css" />
+        <link rel="stylesheet" href="resources/css/contact.css" />
+        <link href="resources/mapbox-gl/mapbox-gl.css" rel="stylesheet" />
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/home_logo_bg_hero.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body onload="loaded()">
+        <div class="loader">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+            <div class="c c4"></div>
+            <div class="c c5"></div>
+            <div class="c c6"></div>
+        </div>
+        <script>
+            let loader = document.querySelector(".loader");
+            function loaded() {
+                loader.classList.add("remove");
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 1000);
+            }
+        </script>
+        <!-- HAMBURGER MENU BUTTON (responsively visible) -->
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- THE REAL NAVIGATION -->
+        <nav class="navigation">
+            <h1>
+                Arbaz
+                <div></div>
+                <div></div>
+            </h1>
+            <ul>
+                <li><a href="#" onclick="home()">home</a></li>
+                <li style="text-align: center;">
+                    <a href="#" onclick="about(); animate3.play(); animate4.play();">Background</a>
+                </li>
+                <li><a href="#" onclick="services(); animate6.play();">Experience</a></li>
+                <li><a href="#" onclick="portfolio()">Projects</a></li>
+                <li><a href="#" onclick="blog()">Refs & Recs</a></li>
+                <li>
+                    <a href="#" onclick="contact(); animate5.play()">contact</a>
+                </li>
+            </ul>
+            <p>&copy; akhan.dev</p>
+        </nav>
+
+        <div class="container">
+            <div class="layer layer1 active">
+                <div class="home main">
+                    <div class="canvas_container">
+                        <canvas></canvas>
+                    </div>
+                    <div class="content-for-home">
+                        <div class="img-container"></div>
+                        <h1 align="center">Arbaz Khan</br>
+                        Junior Software Engineer
+                        </h1>
+                        <div class="social-icons">
+                        <div class="s-icon">
+                            <a href="https://www.linkedin.com/in/arbaz-khan-1798ba216/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <div class="s-name">LinkedIn</div>
+                        </div>
+                        <div class="s-icon">
+                            <a href="https://github.com/arbazKhan33">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <div class="s-name">GitHub</div>
+                        </div>
+                        <div class="s-icon">
+                            <a href="mailto:akhan3.bhs@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <div class="s-name">Email</div>
+                        </div>
+                    </div>
+
+
+                        <div class="side-nav">
+                            <button onclick="about(); animate3.play(); animate4.play();">
+                                <i class="fas fa-user"></i>
+                                <span class="tooltip"> About Me </span>
+                            </button>
+                            <button onclick="services(); animate6.play();">
+                                <i class="fas fa-code"></i>
+                                <span class="tooltip"> Skills </span>
+                            </button>
+                            <button onclick="portfolio()">
+                                <i class="fas fa-cogs"></i>
+                                <span class="tooltip">  Projects </span>
+                            </button>
+                            <button onclick="blog()">
+                                <i class="fas fa-file"></i>
+                                <span class="tooltip"> Resume </span>
+                            </button>
+                            <button onclick="contact(); animate5.play()">
+                                <i class="fas fa-envelope"></i>
+                                <span class="tooltip"> Get In Touch! </span>
+                            </button>
+                        </div>
+
+
+
+                        <div class="titles-for-side-nav">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer2">
+                <div class="about main">
+                    <!-- SEGMENT FOR STYLING. -->
+                    <div class="styling">
+                        <div class="absolute box"></div>
+                        <div class="absolute circle"></div>
+                        <div class="absolute triangle"></div>
+                        <div class="absolute dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                            <div class="dot dot4"></div>
+                            <div class="dot dot5"></div>
+                            <div class="dot dot6"></div>
+                            <div class="dot dot7"></div>
+                            <div class="dot dot8"></div>
+                            <div class="dot dot9"></div>
+                            <div class="dot dot10"></div>
+                            <div class="dot dot11"></div>
+                            <div class="dot dot12"></div>
+                            <div class="dot dot13"></div>
+                            <div class="dot dot14"></div>
+                            <div class="dot dot15"></div>
+                            <div class="dot dot16"></div>
+                            <div class="dot dot17"></div>
+                            <div class="dot dot18"></div>
+                            <div class="dot dot19"></div>
+                            <div class="dot dot20"></div>
+                            <div class="dot dot21"></div>
+                            <div class="dot dot22"></div>
+                            <div class="dot dot23"></div>
+                            <div class="dot dot24"></div>
+                        </div>
+
+                        <svg class="wave absolute"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 1450 320">
+                            <path fill-opacity="1"
+                                  d="M0,320L48,277.3C96,235,192,149,288,122.7C384,96,480,128,576,165.3C672,203,768,245,864,234.7C960,224,1056,160,1152,112C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                        </svg>
+
+                        <svg class="wave absolute opposite"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 1450 320">
+                            <path fill-opacity="1"
+                                  d="M0,224L48,213.3C96,203,192,181,288,192C384,203,480,245,576,218.7C672,192,768,96,864,64C960,32,1056,64,1152,101.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                        </svg>
+                    </div>
+
+                    <!-- REAL CONTENT -->
+                    <div class="wrapper">
+                        <div class="face face1">
+                            <div class="content">
+                                <p></p>
+                                <h1>Hello,</h1>
+                                <p class="text">
+                                    I'm Arbaz Khan, a passionate and driven software developer based in Houston, TX. 
+                                    With a solid foundation in computer science and a keen interest in cutting-edge technologies, 
+                                    I'm dedicated to pushing the boundaries of what's possible in the world of software engineering.
+
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="face face2"></div>
+                    </div>
+
+                    <!-- THE NAVIGATION OF ABOUT -->
+                    <nav class="about_nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#" data-text="one">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#" data-text="two">Experience</a>
+                            </li>
+                            <li>
+                                <a href="#" data-text="three">Education</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="about_container">
+                        <!-- SKILL BOX -->
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="name">Python</div>
+                                <div class="value" style="left: 95%">95%</div>
+                                <div class="percent">
+                                    <div class="progress"
+                                         style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">C++</div>
+                                <div class="value" style="left: 90%">90%</div>
+                                <div class="percent">
+                                    <div class="progress"
+                                         style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">SQL</div>
+                                <div class="value" style="left: 85%">85%</div>
+                                <div class="percent">
+                                    <div class="progress"
+                                         style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">Java</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div class="progress"
+                                         style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">HTML5</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div class="progress"
+                                         style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="name">CSS3</div>
+                                <div class="value" style="left: 75%">75%</div>
+                                <div class="percent">
+                                    <div class="progress"
+                                         style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EXPERIENCE -->
+                        <div class="experience">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">April 2023 - Present</i>
+                                <h2>Undergraduate Researcher</h2>                 <!-- stopped here -->
+                                <i class="name_company">Department of Computer Science & Engineering Technology, University of Houston-Downtown </i>
+                                <article class="text_hidden">
+                                    I spearheaded advanced research in Robot Operating System (ROS) and path planning algorithms for TurtleBot3, 
+                                    with a strong emphasis on modularity and scalability within ROS's node-based architecture. This included seamless 
+                                    integration of software components on Linux platforms, rapid adaptation to diverse technology domains, and expert network 
+                                    configuration for smooth communication between robotic components. Leveraging ROS's TF library, I enhanced spatial awareness 
+                                    accuracy through precise coordinate transformations and synchronized sensor data acquisition. Additionally, 
+                                    I utilized RViz for 3D visualization, conducted rigorous unit and integration testing, and demonstrated proficiency in 
+                                    systems-level software engineering, optimizing code for enhanced action execution in navigation and manipulation tasks.
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date"> May 2023- Present </i>
+                                <h2>Undergraduate Researcher</h2>
+                                <i class="name_company">Department of Natural Sciences, University of Houston-Downtown </i>
+                                <article class="text_hidden">
+                                    In collaboration with two accomplished fellow undergraduate researchers in Biology, our project embarked on a comprehensive 
+                                    longitudinal assessment of endemic ectoparasite vectors in Harris County, Texas, spanning over a decade. While my colleagues 
+                                    delved into the intricate biological aspects of the study, I played a pivotal role in harnessing the power of Python and 
+                                    its libraries - including Pandas for extensive dataset handling and cleaning, NumPy for advanced numerical computations, and SciPy 
+                                    for scientific and technical computing. This encompassed critical tasks such as data filtering, sorting, and transformation, 
+                                    ensuring impeccable data integrity and quality assurance. Additionally, my proficiency in Python and these specialized libraries was 
+                                    instrumental in generating various visualizations using Matplotlib and Seaborn, as well as implementing advanced analytical techniques. 
+                                    These technical contributions seamlessly complemented our team's collective efforts to shed light on the geospatial distribution patterns of 
+                                    these vectors. Our combined expertise, leveraging these Python libraries, aims to provide invaluable insights into the dynamic interaction between 
+                                    environmental factors and vector populations, ultimately contributing to the safeguarding of public health in the region.
+                                </article>
+                            </div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">May 2023- Present</i>
+                                <h2>Tutor</h2>
+                                <i class="name_company">Collaborative Learning Community Center, University of Houston-Downtown</i>
+                                <article class="text_hidden">
+                                    Provided individualized academic support for the following courses: Discrete Mathematical Structures, 
+                                    Data Structures & Algorithms, Introduction to CS with C++, Introduction to Computer Organization, Digital Logic, 
+                                    Calculus, Calculus II, Data and Information Structures, Introduction to Python, Internet of Things, Theory of Computation, 
+                                    Linear Algebra, Introduction to Robotics
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-briefcase"></i>
+                                <i class="date">Aug 2021 - April 2023</i>
+                                <h2>Advising Assistant</h2>
+                                <i class="name_company">College of Sciences and Technology, University of Houston–Downtown</i>
+                                <article class="text_hidden">
+                                    As an Advising Assistant, I played a pivotal role in supporting students through their academic journeys. 
+                                    This encompassed providing clear guidance on program requirements, aiding in course selection, and assisting with 
+                                    overall program planning. I collaborated closely with academic advisors, faculty, and university staff to ensure students 
+                                    received accurate and timely information. When students encountered academic challenges, I applied problem-solving skills 
+                                    to offer tailored solutions. I meticulously managed student records, ensuring they were up-to-date and in compliance with 
+                                    university policies. My organizational prowess shone through in scheduling and appointment management. Additionally, I promptly 
+                                    addressed inquiries and concerns, delivering top-notch customer service and fostering a positive atmosphere. 
+                                    I also proficiently utilized advising software systems and student information platforms to track student progress and maintain 
+                                    relevant records.
+                                </article>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <div class="middle_line"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">August 2020 - May 2024</i>
+                                <h2>University of Houston Downtown</h2>
+                                <i class="name_company">Bachelors of Science, Computer Science</i>
+                                <article class="text_hidden">
+                                    
+                                    Expected Graduation: May 2024 </br>
+                                    GPA: 3.56</br>
+
+                                    Honors and Scholarships:</br>
+
+                                        Dean’s List</br>
+                                        H-LSAMP Scholarship recipient</br>
+                                        Jesse H. and Mary Gibbs Jones Endowment Scholarship recipient</br>
+                                        Carmen and Antonio Marin Scholarship recipient</br>
+                                        Northrop Grumman 2023 GMiS STEM Scholars Scholarship recipient
+                                </article>
+                            </div>
+                            <div class="whitespace"></div>
+                            <div class="whitespace"></div>
+                            <div class="cover">
+                                <i class="job_box fas fa-book-reader"></i>
+                                <i class="date">August 2016 - May 2020 </i>
+                                <h2>Bellaire Senior High School</h2>
+                                <i class="name_company">Bellaire, TX</i>
+                                <article class="text_hidden">
+                                    GPA: 4.00 </br>
+                                    Graduated in the top 15% of a class of 850 students. </br>
+                                    Magnet Student
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer3">
+                <div class="services main">
+                    <!-- <section class="background">
+                    <div class="bg_wrapper"></div>
+                </section> -->
+                    <div class="hero">
+                        <span class="typography">
+                            <span class="t_dummy">Rotating Mantras </span> <br />
+                            <span class="t-box">
+                                <span class="box-side box-front">Be Innovative</span>
+                                <span class="box-side box-top">Dream Big</span>
+                                <span class="box-side box-back">Push Limits</span>
+                                <span class="box-side box-bottom">Stay Curious</span>
+                            </span>
+                        </span>
+                        <p class="hero-text">
+                            "My research on Path Planning Algorithms on the Turtlebot3 robotic platform significantly advanced my skills in 
+                            Autonomous Navigation and other areas of Robotics."
+                        </p>
+                    </div>
+                    <div class="capabilities left move-little-down">
+                        <img src="resources/img/elements/web_bg.png" alt="" />
+                        <p class="c_content">
+                            <span class="c_title"></span>
+                            In the realm of Machine Learning and Computer Vision, I've demonstrated proficiency through hands-on projects. I've developed and trained neural networks using TensorFlow/Keras 
+                            which deepened my understanding of Convolutional Neural Networks (CNNs) and their applications in machine learning. I've created a system using OpenCV for accurate hand movement detection, and 
+                            successfully integrated it with a robotic arm to replicate gestures in real-time.
+                            <br />
+                            
+                        </p>
+                    </div>
+                    <div class="capabilities right">  <!--stop here -->
+                        <p class="c_content">
+                            <span class="c_title"></span>
+                            Experienced in implementing advanced pathfinding algorithms (Dijkstra's and A-Star) and integrating visualization tools 
+                            like Pygame for real-time observation of maze generation and navigation processes. Solid foundation in developing programs 
+                            for job analysis by using the Natural Language Toolkit for advanced text processing, while designing user-friendly 
+                            interfaces to ensure accessibility for non-technical users.
+                            <br />
+                            
+                        </p>
+                        <img src="resources/img/elements/graphics_bg.png"
+                             alt="" />
+                    </div>
+                    <div class="capabilities left">
+                        <img src="resources/img/elements/seo_bg.png"
+                             alt=""
+                             style="
+                                background: #2929292f;
+                                backdrop-filter: blur(4px);
+                                border-radius: 40px;
+                            " />
+                        <p class="c_content">
+                            <span class="c_title"></span>
+                            Exploring various realms of software development through my diverse projects has honed my skills, making me a highly versatile programmer. </br>  
+                            Don't just take my word for it, take a look at some of my work in the Projects section.
+                            <br />
+                            <a href="#">Learn More</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </p>
+                    </div>
+                    <div class="foot">
+                        <h2>Links:</h2>
+                        <div class="foot-link">
+                            <a href="#" onclick="portfolio()">Projects</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img src="resources/img/portfolios/app/2.jpg"
+                                 alt="portfolio" />
+                        </div>
+                        <div class="foot-link">
+                            <a href="https://www.linkedin.com/in/arbaz-khan-1798ba216/" target="_blank">LinkedIn</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img src="resources/img/portfolios\app\4.png"
+                                alt="portfolio" />
+                        </div>
+                        <div class="foot-link">
+                            <a href="https://github.com/arbazKhan33" target="_blank">Project Repositories</a>
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <img src="resources/img/portfolios/app\1.jpg"
+                            alt="portfolio" />
+                        </div>
+                    </div>
+                </div>
+            </div>    <!--Start here -->
+            <div class="layer layer4">
+                <div class="portfolio main">
+                    <div class="tip main">
+                        <div class="allContent">
+                            <div class="description" style="display: none">
+                                <div class="pro_intro">
+                                    <div class="nameplate">
+                                        <h1>Wedding Couple</h1>
+                                        <span>
+                                            Category:
+                                            <span style="color: #999">Web Design</span>
+                                        </span>
+                                    </div>
+                                    <div class="other_text">
+                                        <h2>Project Description:</h2>
+                                        <p class="pro_brief"
+                                           style="
+                                                color: #999;
+                                                padding-left: 15px;
+                                            ">
+                                            Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. At
+                                            corrupti modi perferendis iure
+                                            corporis dolores minus asperiores
+                                            nemo debitis veritatis id placeat,
+                                            similique eum recusandae ipsa quia
+                                            cum earum nam?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pro_info">
+                                    <h2>Project Info</h2>
+                                    <p class="Date">
+                                        <b>Date: </b>
+                                        <span style="color: #999">2021-2023</span>
+                                    </p>
+                                    <p class="client">
+                                        <b>Client: </b>
+                                        <span style="color: #999">Various Clients</span>
+                                    </p>
+                                    <p>
+                                        <b>Tools: </b>
+                                        <span style="color: #999">Visuals Studios, Visual Studio Code, Microsoft Office, Jupyter Notebook, Arduino, Gazebo, RViz</span>
+                                    </p>
+                                    <p class="link">
+                                        <b>Web: </b>
+                                        <span style="color: #999">
+                                            <a href="#">https://github.com/arbazKhan33</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="closeButton">
+                                <span>Project Details</span>
+                                <div class="icon"></div>
+                            </button>
+                            <button class="exitButton">&times;</button>
+
+                            <div class="port_content">
+                                <div class="swiper-container-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="#" alt="web design" />
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="about_nav padding_top">
+                        <ul>
+                            <li>
+                                <a class="filter active"
+                                   href="#"
+                                   data-filter="all">All</a>
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".web">C++ </a>
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".logo">Python</a>
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".app">Research</a>
+                            </li>
+                            <li>
+                                <a class="filter" href="#" data-filter=".icon">Other</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mymixcont">
+                        <div class="mix web">
+                            <img src="resources/img/portfolios/web/1.jpg"
+                                 alt="" />
+                            <span class="title">DNA Sequence Validator</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix icon">
+                            <img src="resources/img/portfolios/app/2.jpg"
+                                 alt="" />
+                            <span class="title">Fitness Management App</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix web">
+                            <img src="resources/img/portfolios/web/2.jpg"
+                                 alt="" />
+                            <span class="title">Sorting & Arranging in C++</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix app">
+                            <img src="resources/img/portfolios/app/1.jpg"
+                                 alt="" />
+                            <span class="title">ROS and Path Planning</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix web">
+                            <img src="resources/img/portfolios/web/3.jpg"
+                                 alt="" />
+                            <span class="title">Custom Container Challenge</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix web">
+                            <img src="resources/img/portfolios/web/4.png"
+                                 alt="" />
+                            <span class="title">Stacks, Recursion, Hash Tables</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix logo">
+                            <img src="resources/img/portfolios/logo/1.jpg"
+                                 alt="" />
+                            <span class="title">Quadratic Equation Solver</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix icon">
+                            <img src="resources/img/portfolios/icon/4.png"
+                                 alt="" />
+                            <span class="title">Elegoo Smart Robot Car v4.0</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix app">
+                            <img src="resources/img/portfolios/icon/2.jpg"
+                                 alt="" />
+                            <span class="title">Blockchain: Energy vs Throughput</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix logo">
+                            <img src="resources/img/portfolios/logo/2.png"
+                                 alt="" />
+                            <span class="title">Average Rainfall Calculator</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix logo">
+                            <img src="resources/img/portfolios/logo/3.jpg"
+                                 alt="" />
+                            <span class="title">Summer Vacation Planner</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix logo">
+                            <img src="resources/img/portfolios/logo/4.png"
+                                 alt="" />
+                            <span class="title">Employee Payroll Processor</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix icon">
+                            <img src="resources/img/portfolios/icon/1.png"
+                                 alt="" />
+                            <span class="title">Stock Price Change Analyzer</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix logo">
+                            <img src="resources/img/portfolios/logo/5.png"
+                                 alt="" />
+                            <span class="title">Gesture-Controlled Robotic Arm</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix icon">
+                            <img src="resources/img/portfolios/icon/3.png"
+                                 alt="" />
+                            <span class="title">Efficient Search in C++</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix logo">
+                            <img src="resources/img/portfolios/logo/6.png"
+                                 alt="" />
+                            <span class="title">Road Sign Classifier: CNN Model</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix logo">
+                            <img src="resources/img/portfolios/logo/7.jpeg"
+                                 alt="" />
+                            <span class="title">NLP Job Market Analyzer</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        <div class="mix app">
+                            <img src="resources/img/portfolios/app/3.png"
+                                 alt="" />
+                            <span class="title">Trends in Ectoparasite Vectors</span>
+                            <span class="port_link">View Project</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer5">
+                <div class="testimonial">
+                    <h1>
+                        <span>Letters of Recommendation</span>
+                    </h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.png" alt="" />
+                                <h4>Elizabeth Villegas, Assistant Dean</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    "Arbaz Khan, a highly proficient and dedicated student worker with a strong STEM background, 
+                                    has consistently excelled in his role at the CST Advising Center, proving to be an invaluable 
+                                    asset and an excellent team player."
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.png" alt="" />
+                                <h4>Joseph Kamto, Lecturer</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Throughout my tenure at the University of Houston Downtown, Arbaz consistently exceeded my expectations in classes 
+                                    demonstrating dedication, intelligence, and a genuine passion for his field, which I believe will be instrumental in his 
+                                    future pursuits.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.png" alt="" />
+                                <h4>Ting Zhang, Associate Professor</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Arbaz has always been a dedicated and motivated student, consistently exceeding my expectations in the classroom. 
+                                    His ability to grasp complex concepts quickly and apply them to real-world scenarios is truly remarkable.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.png" alt="" />
+                                <h4>Jordal Gipson, Assistant Director</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Having worked closely with Arbaz, I  I had the privilege of witnessing his exemplary work ethic, 
+                                    consistently surpassing expectations and demonstrating a remarkable aptitude for problem-solving and 
+                                    adapting to various situations. 
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.png" alt="" />
+                                <h4> Mian Jiang, Associate Professor</h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Arbaz's exceptional leadership in my chemistry lab, despite his computer science background, 
+                                    showcases remarkable adaptability, diligence, and a strong work ethic, proving invaluable to our research 
+                                    endeavors and exemplifying interdisciplinary excellence.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/img/favicon.png" alt="" />
+                                <h4>Knwon Bill, Academic Success Coordinator II </h4>
+                                <div class="rating">
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                    <label>&starf;</label>
+                                </div>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Arbaz's unwavering commitment to his Computer Science studies, coupled with his adaptability, 
+                                    problem-solving prowess, collaborative aptitude, strong interpersonal skills, and leadership potential, 
+                                    positions him as an outstanding candidate for various professional oppertunites.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer layer6">
+                <div class="contact_us">
+                    <div id="map"></div>
+                    <address class="info_container">
+                        <div class="info info1">
+                            <i class="fas fa-phone-alt"></i>
+                            <span class="iname">Phone</span>
+                            <a href="tel:+1 713-505-3282">+1 713-505-3282</a>
+                        </div>
+                        <div class="info info2">
+                            <i class="fas fa-home"></i>
+                            <span class="iname">Location</span>
+                            <div id="map"></div>
+                            <h3>Based in Houston</h3>
+                            <span>Houston, TX</span><br />
+                        </div>
+                        <div class="info info3">
+                            <i class="fas fa-envelope"></i>
+                            <span class="iname">Email</span>
+                            <a href="mailto:email1.gmail.com">akhan3.bhs@gmail.com</a>
+                        </div>
+                    </address>
+
+                    <form action="#" method="post">
+                        <h1>Get In Touch</h1>
+                        <div class="inp_field">
+                            <i class="fas fa-user"></i>
+                            <input type="text"
+                                   name="name"
+                                   class="fname"
+                                   id="fname"
+                                   placeholder="Full Name"
+                                   required />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email"
+                                   name="email"
+                                   class="email"
+                                   id="email"
+                                   placeholder="Email"
+                                   required />
+                        </div>
+                        <div class="inp_field">
+                            <i class="fas fa-angle-double-right"></i>
+                            <input type="text"
+                                   name="subject"
+                                   class="subject"
+                                   id="subject"
+                                   placeholder="Subject"
+                                   required />
+                        </div>
+                        <textarea name="message"
+                                  cols="30"
+                                  rows="5"
+                                  class="message"
+                                  id="message"
+                                  placeholder="Message"
+                                  required></textarea>
+                        <button class="submit" id="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------JQUERY {https://jquery.com/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-----------------MIX IT UP {https://www.kunkalabs.com/mixitup/} [USED IN portfolio.js]----------------->
+        <script src="resources/js/mixitup.min.js"></script>
+        <!-----------------SWIPER JS {https://swiperjs.com/} [USED IN portfolio.js, blog.js]----------------->
+        <script src="resources/swiper js/swiper-bundle.min.js"></script>
+        <!-----------------MAPBOX GL {https://www.mapbox.com/} [USED IN contact.js]----------------->
+        <script src="resources/mapbox-gl/mapbox-gl.js"></script>
+        <!-----------------EMAIL JS {https://www.emailjs.com/} [USED IN contact.js]----------------->
+        <script src="resources/js/email.min.js"></script>
+        <!-----------------ADDITIONAL SCRIPT FOR EMAIL JS----------------->
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_5OMETIDQ2Nm9qBMtaFNz4");
+            })();
+        </script>
+        <!-----------------VANILLA TILT JS {https://micku7zu.github.io/vanilla-tilt.js/}----------------->
+        <script src="resources/js/vanilla-tilt.min.js"></script>
+        <!-----------------ANIME JS {https://animejs.com/} [USED LOCALLY.]----------------->
+        <script src="resources/js/anime.min.js"></script>
+        <!-----------------LOCAL (HOME)----------------->
+        <script src="resources/js/home.js"></script>
+        <!-----------------LOCAL (ABOUT)----------------->
+        <script src="resources/js/about.js"></script>
+        <!-----------------LOCAL (SERVICES)----------------->
+        <script src="resources/js/services.js"></script>
+        <!-----------------LOCAL (PORTFOLIO)----------------->
+        <script src="resources/js/portfolio.js"></script>
+        <!-----------------LOCAL (BLOG)----------------->
+        <script src="resources/js/blog.js"></script>
+        <!-----------------LOCAL (CONTACT)----------------->
+        <script src="resources/js/contact.js"></script>
+        <!-----------------LOCAL (MAIN FILE)----------------->
+        <script src="resources/js/main.js"></script>
+
+        <!-----------------LOCAL (MAIN FILE { USED TO ANIMATE WEBPAGE.})----------------->
+        <script>
+            const animate1 = anime.timeline({
+                targets: ".circle",
+                loop: true,
+                duration: 2000,
+                direction: "alternate",
+                easing: "easeInOutQuad",
+            });
+            animate1.add({
+                translateX: 350,
+            });
+
+            let dot = document.querySelectorAll(".dot");
+            for (let i = 0; i < dot.length; i++) {
+                const ind = dot[i];
+                const animate2 = anime.timeline({
+                    targets: ind,
+                    loop: true,
+                    direction: "alternate",
+                    delay: i * 100,
+                });
+                animate2.add({
+                    scale: 2,
+                });
+            }
+
+            let span = document.querySelectorAll(".content .text span");
+            const animate3 = anime.timeline({
+                targets: span,
+                easing: "easeInOutExpo",
+                delay: anime.stagger(20, { direction: "reverse" }),
+                direction: "reverse",
+                autoplay: false,
+            });
+
+            animate3.add({
+                rotate: () => {
+                    return anime.random(-360, 360);
+                },
+                translateX: () => {
+                    return anime.random(-500, 500);
+                },
+                translateY: () => {
+                    return anime.random(-500, 500);
+                },
+                duration: 3000,
+            });
+
+            const animate4 = anime({
+                targets: ".button",
+                scale: [0, 1],
+                delay: anime.stagger(200, { start: 7000 }),
+                autoplay: false,
+            });
+
+            const animate5 = anime({
+                targets: [
+                    document.querySelectorAll(".info"),
+                    document.querySelectorAll(".inp_field"),
+                    ".message",
+                    ".submit",
+                ],
+                translateY: [50, 0],
+                rotateX: [90, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                duration: 750,
+                autoplay: false,
+                easing: "easeOutQuint",
+            });
+
+            const animate6 = anime({
+                targets: ['.services .t_dummy', '.services .hero-text'],
+                duration: 1000,
+                scaleX: [0, 1],
+                delay: anime.stagger(300, { start: 1000 }),
+                autoplay: false,
+            });
+
+            function resize() {
+                if (window.innerWidth <= 632) {
+                    animate5.play();
+                    animate3.play();
+                    animate4.play();
+                    animate6.play();
+                }
+            }
+            resize();
+            window.addEventListener("resize", resize);
+        </script>
+    </body>
+</html>
